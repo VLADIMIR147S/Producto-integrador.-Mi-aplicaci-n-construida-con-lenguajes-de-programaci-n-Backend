@@ -25,7 +25,7 @@ $flashes = take_flashes();
 </nav>
 <div class="sidebar-bottom">
 <span class="user-mini"><?= avatar($me['username'] ?? 'Usuario') ?><span><?= e($me['username'] ?? '') ?></span></span>
-<a href="logout.php"><?= icon('logout') ?> Cerrar sesión</a>
+<form method="post" action="logout.php" class="logout-form"><?= csrf_field() ?><button type="submit" class="logout-button"><?= icon('logout') ?> Cerrar sesión</button></form>
 </div>
 </aside>
 <main class="main-content">
