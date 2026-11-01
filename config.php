@@ -10,14 +10,14 @@ declare(strict_types=1);
 // Por defecto usa SQLite (no requiere configuración). Para MySQL/MariaDB
 // cambie DB_DRIVER a 'mysql', complete los datos y ejecute install.sql.
 define('DB_DRIVER', 'sqlite');                       // 'sqlite' | 'mysql'
-define('DB_SQLITE_PATH', __DIR__ . '/data/galeria.sqlite');
+define('DB_SQLITE_PATH', getenv('DB_SQLITE_PATH') ?: (is_dir('/var/data') ? '/var/data/galeria.sqlite' : __DIR__ . '/data/galeria.sqlite'));
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'galeria');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 
 // ---------- Archivos ----------
-define('UPLOAD_DIR', __DIR__ . '/uploads');
+define('UPLOAD_DIR', getenv('UPLOAD_DIR') ?: (is_dir('/var/data') ? '/var/data/uploads' : __DIR__ . '/uploads'));
 define('MAX_FILE_SIZE', 5 * 1024 * 1024);            // 5 MB
 define('ALLOWED_MIME', [
     'image/jpeg' => 'jpg',
