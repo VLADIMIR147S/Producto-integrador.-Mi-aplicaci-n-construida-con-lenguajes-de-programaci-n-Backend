@@ -71,3 +71,16 @@ body{background:var(--bg);font-family:"Plus Jakarta Sans",Inter,ui-sans-serif,sy
 @media(max-width:950px){.stat-grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}.sidebar{width:190px}}
 @media(max-width:700px){.sidebar{width:68px;padding:18px 8px}.sidebar .brand{padding:0;justify-content:center}.side-nav a,.sidebar-bottom a,.logout-button{font-size:0;justify-content:center;padding:12px 8px}.side-nav a svg,.logout-button svg{width:20px;height:20px}.user-mini{justify-content:center;padding:8px 0}.user-mini span:last-child{display:none}.main-content{padding:20px 13px}.stat-grid,.stat-grid.four{grid-template-columns:1fr 1fr;gap:10px}.stat-card{padding:13px;gap:10px}.stat-icon{width:34px;height:34px}.stat-card strong{font-size:19px}.two-col{grid-template-columns:1fr}.masonry{grid-template-columns:repeat(2,minmax(0,1fr))}.tile-img{height:150px}}
 @media(prefers-color-scheme:dark){body,.app-shell{background:#111827;color:#e5e7eb}.main-content{color:#e5e7eb}.stat-card,.card,.tile,.search-box,.select,.toolbar.inside{background:#1f2937;border-color:#374151}.stat-card strong,.tile-text strong,.user-cell strong{color:#e5e7eb}.table th{background:#17202e;color:#9ca3af}.table td{border-color:#374151;color:#cbd5e1}.tile-text small,.muted{color:#9ca3af}.btn-ghost{background:#1f2937;color:#e5e7eb;border-color:#374151}.field>input,.field>textarea{background:#111827;border-color:#4b5563;color:#e5e7eb}}
+
+/* Fondo blanco global solicitado */
+html,body,.app-shell,.main-content,.landing,.features,.steps,.auth-panel{background:#fff!important;color:#182230!important}
+body{background-color:#fff!important}
+.features{background:#fff!important}
+.sidebar{background:#111827!important;color:#e5e7eb!important}
+.stat-card,.card,.tile,.search-box,.select,.toolbar.inside,.modal,.lightbox{background:#fff!important;color:#182230!important;border-color:#e8edf4!important}
+.stat-card strong,.tile-text strong,.user-cell strong,.page-header h1,.section-title,.card-title{color:#182230!important}
+.table th{background:#f8fafc!important;color:#7b8798!important}
+.table td{background:#fff!important;color:#475467!important;border-color:#edf0f5!important}
+.tile-text small,.muted,.lead,.section-sub{color:#667085!important}
+.btn-ghost{background:#fff!important;color:#344054!important;border-color:#e5eaf1!important}
+.field>input,.field>textarea,.input-icon{background:#fff!important;color:#182230!important;border-color:#d0d5dd!important}
